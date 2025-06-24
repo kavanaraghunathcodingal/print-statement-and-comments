@@ -1,11 +1,10 @@
-num = float(input("Enter a decimal number: "))
-binary = ""
-while num > 0:
-    r = num % 2
-    num //= 2
-    for i in range(2):
-        if i == r:
-            binary = str(i) + binary
-if binary == "":
-    binary = "0"
-print("Binary:", binary)
+num = int(input("Enter a positive integer: "))
+if num == 0:
+    print("Binary: 0")
+else:
+    binary = ""
+    while num > 0:
+        r = num % 2
+        binary = str(r) + binary
+        num //= 2
+    print("Binary:", binary)
