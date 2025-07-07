@@ -1,7 +1,11 @@
 import turtle
-t= turtle.Turtle()
-turtle.bgcolor("yellow")
-for i in range(4):
-    turtle.right(90)
-    turtle.forward(100)
-turtle.done()
+
+screen = turtle.Screen()
+screen.bgcolor("yellow")
+
+t = turtle.Turtle()
+for _ in range(4):
+    t.right(90)
+    t.forward(100)
+
+screen.mainloop()
